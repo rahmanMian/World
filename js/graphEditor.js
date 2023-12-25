@@ -22,8 +22,9 @@ class GraphEditor{
           this.canvas.addEventListener("contextmenu", (evt) => evt.preventDefault());
           this.canvas.addEventListener("mouseup", () => this.dragging = false);
         }
+
          #handleMouseMove(evt){
-        this.mouse = this.viewport.getMouse(evt);
+        this.mouse = this.viewport.getMouse(evt, true);
         this.hovered = getNearestPoint(this.mouse, this.graph.points, 10 * this.viewport.zoom);
         if (this.dragging == true){
             this.selected.x = this.mouse.x;
@@ -69,7 +70,12 @@ class GraphEditor{
             this.selected = null;
         }
     }
-
+  
+    dispose(){
+        this.graph.dispose();
+        this.selected = null;
+        this.hovered = null;
+    }
     display(){
         this.graph.draw(this.ctx);
        if (this.hovered){
