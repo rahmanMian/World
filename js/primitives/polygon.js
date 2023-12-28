@@ -39,6 +39,7 @@ class Polygon{
             }
         }
     }
+
     static break(poly1, poly2) {
         const segs1 = poly1.segments;
         const segs2 = poly2.segments;
@@ -75,10 +76,11 @@ class Polygon{
         for(const seg of this.segments){
             const int = getIntersection(outerPoint, point, seg.p1, seg.p2);
             if(int){
-            }intersectionCount++;
+            intersectionCount++;
         }
-        return intersectionCount % 2 == 1;
     }
+    return intersectionCount % 2 == 1;
+}
 
     drawSegments(ctx){
         for(const seg of this.segments){
