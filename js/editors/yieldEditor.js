@@ -1,14 +1,14 @@
-class StopEditor extends MarkingEditor {
+class YieldEditor extends MarkingEditor {
    constructor(viewport, world){
     super(viewport, world, world.laneGudies);
    }
 
     createMarking(center, directionVector) {
-        return new Stop(
+        return new Yield(
             center,
              directionVector,
             world.roadWidth / 2,
             world.roadWidth / 2
-        ); 
+        );
     }
 }
