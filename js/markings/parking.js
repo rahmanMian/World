@@ -21,5 +21,7 @@ class Parking extends Marking{
         ctx.font ="bold" +  this.height * 0.3;
         ctx.fillText("P", 0, 1);
         ctx.restore();
+
+        
     }
-}
+} 
