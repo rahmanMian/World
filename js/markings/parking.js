@@ -3,6 +3,7 @@ class Parking extends Marking{
        super(center, directionVector, width, height);
 
         this.borders = [this.poly.segments[0], this.poly.segments[2]];
+        this.type = "parking";
     }
 
     draw(ctx) {
@@ -13,7 +14,6 @@ class Parking extends Marking{
         ctx.translate(this.center.x, this.center.y);
         ctx.rotate(angle,(this.directionVector) - Math.PI / 2);
         ctx.scale(3,3);
-
         ctx.beginPath();
         ctx.textBaseline = "middle";
         ctx.textAlign = "center";
