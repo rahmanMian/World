@@ -1,5 +1,6 @@
        World is the first part of the Autonomous Car Project. Built purely with HTML,CSS, and JavaScript. No Libraries!
-<img width="931" alt="image" src="https://github.com/rahmanMian/World/assets/89672689/3162c1cc-ea94-4eea-88f6-8d674a84f0f0">
+       
+https://github.com/rahmanMian/World/assets/89672689/0ef4ad0a-3bd0-4b76-b079-abd37bbb6eab
 
 
 The user is allowed to make their own "World" using Spatial Graphs. This is done by simply using Points and Segments to connect them.
@@ -15,4 +16,3 @@ The user has an option to save the world to local storage for later. This is don
 
 
 
-https://github.com/rahmanMian/World/assets/89672689/0ef4ad0a-3bd0-4b76-b079-abd37bbb6eab
